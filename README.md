@@ -21,7 +21,7 @@ Models tested were; random forest, SVM, XGBoost, Linear Regression, KNN, 2 Class
 XGB performed best (broadly). 
 
 Comparison of XGB configurations shown here: 
-![xgb_comparison_image](mater/explortatory/xgb_comp.png)
+![xgb_comparison_image](mater/exploratory/xgb_comp.png)
 
 Best results were achieved with an XGBoost model, using all existing and newly created features, and without resampling the training dataset to improve the extreme class imbalance. 
 FINAL SCORE: 0.46742, ranking 52nd.
