@@ -17,5 +17,9 @@ pip install -r requirements.txt
 - (directory) submissions/ : predictions on the test set, used in competition entry.
 
 ##### Results
+Models tested were; random forest, SVM, XGBoost, Linear Regression, KNN, 2 Class Bayes
+XGB performed best (broadly). Comparison of XGB configurations shown here:
+![alt text](https://github.com/SassyDate/expedia_kaggle/blob/master/explotatory/xgb_comp.png?raw=true)
+
 Best results were achieved with an XGBoost model, using all existing and newly created features, and without resampling the training dataset to improve the extreme class imbalance. 
 FINAL SCORE: 0.46742, ranking 52nd.
