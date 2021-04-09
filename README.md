@@ -10,7 +10,8 @@ pip install -r requirements.txt
 
 ##### Files
 - binary_classification_pipe.py: runs pre-processing, feature engineering, resampling and model training. Also saves pre-processed data & trained models to disk, to save time later.
-- get_results.ipynb: uses saved model to make predictions on test set & returns them in a format compatable with the comprtition rules.
+- get_results.ipynb: uses saved model to make predictions on test set & returns them in a format compatable with the comprtition rules. Runs using system args 
+e.g. $ python get_results_pipe.py "models/variables_to_model_on.csv" "name_of_submission_output.csv" "trained_model_to_use.sav"
 - (directory) models/ : saved (trained) models.
 - (directory) data/ : raw & pre-processed & engineered data.
 - (directory) exploratory/ : a few WIP files, which have not been used in the final model.
