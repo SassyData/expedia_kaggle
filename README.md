@@ -2,14 +2,14 @@
 Hotels.com travellers provide their trip information, like destination, holiday dates and number of people in the search. The search engine (model) then returns a list of properties, ranked by their relevance to that traveller.
 
 ##### To run this code
-1. Clone the repository
+1. Clone the repository 
 git clone <repo link>
-2. Install all packages from the requirements file (paying particular attention to the sklearn version 0.23.1, as this is a dependancy for imblearn, use for resampling)
+2. Install all packages from the requirements file (paying particular attention to the sklearn version 0.23.1, as this is a dependancy for imblearn, used for resampling) 
 pip install -r requirements.txt 
-3. Open using Jupyter Notebooks / Lab and your prefered IDE.
+3. Open using your prefered python IDE and Jupyter Notebooks or Lab.
 
 ##### Files
-- binary_classification_pipe.py: runs pre-processing, feature engineering, resampling and model training. Also saves pre-processed data & trained models to disk, to save time later.
+- binary_classification_pipe.py: runs pre-processing, feature engineering, resampling and model training. Also saves pre-processed data & trained models to disk, to save time later. 
 - get_results.ipynb: uses saved model to make predictions on test set & returns them in a format compatable with the comprtition rules. Runs using system args 
 e.g. $ python get_results_pipe.py "models/variables_to_model_on.csv" "name_of_submission_output.csv" "trained_model_to_use.sav"
 - (directory) models/ : saved (trained) models.
